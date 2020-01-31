@@ -1,4 +1,4 @@
-The software runs on the ESP8266. The web app is stored in SPIFFS (on-board flash memory). I've forked [jasoncoon's esp8266 fastled webserver](https://github.com/jasoncoon/esp8266-fastled-webserver) and added some extra functionality, made a proper config area and created custom patterns for the lamp.
+The software runs on the ESP8266. The web app is stored in SPIFFS (on-board flash memory). I've forked [jasoncoon's esp8266 fastled webserver](https://github.com/jasoncoon/esp8266-fastled-webserver) and added some extra functionality and made a proper config area.
 Amazon Alexa support and Node-RED integration will follow soon.
 
 **The software can be found on [GitHub](https://github.com/NimmLor/esp8266-fastled-desk-light).**
@@ -49,7 +49,7 @@ For beginners I would recommend watching this setup tutorial below.
 
 ## 2. Software Configuration
 
-1. Download the Project from the [Releases at Github]( https://github.com/NimmLor/esp8266-fastled-desk-light/releases ) and extract the archive
+1. Download the Project from the [Releases at Github]( https://github.com/NimmLor/esp8266-fastled-webserver-alexa/releases ) and extract the archive
 
 2. Open the **.ino** file inside the folder in the Arduino IDE
 
