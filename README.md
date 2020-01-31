@@ -95,3 +95,6 @@ The ESP8266WebServer will automatically serve any .gz file.  The file index.htm.
 ### REST Web services
 
 The firmware implements basic [RESTful web services](https://en.wikipedia.org/wiki/Representational_state_transfer) using the ESP8266WebServer library.  Current values are requested with HTTP GETs, and values are set with POSTs using query string parameters.  It can run in connected or standalone access point modes.
+
+
+**Special thanks to [jasoncoon](https://github.com/jasoncoon)!**
