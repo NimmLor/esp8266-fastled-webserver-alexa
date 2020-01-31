@@ -32,20 +32,20 @@ extern "C" {
 
 
 /*######################## MAIN CONFIG ########################*/
-#define DATA_PIN      D4          // Should be GPIO02 on other boards like the NodeMCU
+#define DATA_PIN      D6          // Should be GPIO02 on other boards like the NodeMCU
 #define LED_TYPE      WS2812B     // You might also use a WS2811 or any other strip that is fastled compatible 
 #define COLOR_ORDER   GRB         // Change this if colors are swapped (in my case, red was swapped with green)
-#define MILLI_AMPS    4000        // IMPORTANT: set the max milli-Amps of your power supply (4A = 4000mA)
+#define MILLI_AMPS    3000        // IMPORTANT: set the max milli-Amps of your power supply (4A = 4000mA)
 #define VOLTS         5           // Voltage of the Power Supply
-#define NUM_LEDS      120
+#define NUM_LEDS      100
 
 const bool apMode = false;        // set to true if the esp8266 should open an access point
 
-#define SOUND_REACTIVE            // Uncomment to enable the Sound reactive mode
+//#define SOUND_REACTIVE            // Uncomment to enable the Sound reactive mode
 #define SOUND_SENSOR_PIN A0       // An Analog sensor should be connected to an analog pin
 #define SENSOR_TYPE 1             // 0: Dumb Sensors, 1: MAX4466 Sound Sensor, 2: MAX9814 Sound Sensor
 
-#define HOSTNAME "LED Strip"      // Name that appears in your network
+#define HOSTNAME "Leds"      // Name that appears in your network
 #define CORRECTION UncorrectedColor       // If colors are weird use TypicalLEDStrip
 
 #define RANDOM_AUTOPLAY_PATTERN   // if enabled the next pattern for autoplay is choosen at random, 
@@ -70,10 +70,10 @@ const bool apMode = false;        // set to true if the esp8266 should open an a
  * defines below.
  */
 #ifdef ENABLE_ALEXA_SUPPORT
- #define ALEXA_DEVICE_NAME           "LEDs"
- #define AddAutoplayDevice           "LEDs Autoplay"
- #define AddStrobeDevice             "LEDs Strobe"
- #define AddSpecificPatternDevice    "LEDs Party"
+ #define ALEXA_DEVICE_NAME           "Leds"
+ #define AddAutoplayDevice           "Leds Autoplay"
+ #define AddStrobeDevice             "Leds Strobe"
+ #define AddSpecificPatternDevice    "Leds Party"
 
 
 #ifdef AddSpecificPatternDevice
