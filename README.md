@@ -13,10 +13,11 @@ This is a fork of [jasoncoon's esp8266 fastled webserver](https://github.com/jas
 ### Bill of Materials
 
 - 1x [Wemos D1 mini](http://s.click.aliexpress.com/e/_srb2XX) is recommended, but any other ESP8266 variant should work too, but it might require an additional step-down converter.
-- [2m WS2812B LED Strip **IP30**](http://s.click.aliexpress.com/e/_sUwhA1), make sure you choose IP30 any other IP rating **will not fit**. I would recommend buying a strip with 60 LEDs/m.
+- [WS2812B LED Strip](http://s.click.aliexpress.com/e/_sUwhA1)
 - 1x [Microphone Sensor](http://s.click.aliexpress.com/e/_sYiUrz) (Optional), MAX4466 Sensor is recommended
 - 1x [3.3V to 5V Logic Level Shifter](http://s.click.aliexpress.com/e/_s49Saz) (optional, required if LEDs "glitch")
 - 1x [Female Power Jack](http://s.click.aliexpress.com/e/_sPe0RR)
+- 1x [5V Power Supply](http://s.click.aliexpress.com/e/_sIzXbC), Note: 100 LEDs draw around 3A
 
 
 
@@ -32,7 +33,7 @@ Hardware
 
 Installation
 --------
-**FOR INSTALLATION REFER TO THE [Software_Installation.md](https://github.com/NimmLor/esp8266-fastled-desk-light/blob/master/Software_Installation.md)**
+**FOR INSTALLATION REFER TO THE [Software_Installation.md](Software_Installation.md)**
 
 
 

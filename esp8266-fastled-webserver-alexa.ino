@@ -131,7 +131,7 @@ uint8_t cooling = 3;
 // Default 120, suggested range 50-200.
 uint8_t sparking = 50;
 
-uint8_t animationspeed = 70;
+uint8_t speed = 70;
 
 ///////////////////////////////////////////////////////////////////////
 
@@ -446,16 +446,16 @@ void setup() {
 
   webServer.on("/speed", HTTP_POST, []() {
     String value = webServer.arg("value");
-    animationspeed = value.toInt();
+    speed = value.toInt();
     broadcastInt("speed", speed);
     sendInt(speed);
   });
 
   webServer.on("/twinkleSpeed", HTTP_POST, []() {
     String value = webServer.arg("value");
-    twinklespeed = value.toInt();
-    if (twinklespeed < 0) twinklespeed = 0;
-    else if (twinklespeed > 8) twinklespeed = 8;
+    twinkleSpeed = value.toInt();
+    if (twinkleSpeed < 0) twinkleSpeed = 0;
+    else if (twinkleSpeed > 8) twinkleSpeed = 8;
     broadcastInt("twinkleSpeed", twinkleSpeed);
     sendInt(twinkleSpeed);
   });
@@ -1117,7 +1117,7 @@ void rainbow_strobe()
   if (autoplay == 1)adjustPattern(true);
   static bool p = false;
   static long lm = 0;
-  if (millis() - lm > (128 - (animationspeed / 2)))
+  if (millis() - lm > (128 - (speed / 2)))
   {
     if (p) fill_solid(leds, NUM_LEDS, CRGB(0, 0, 0));
     else fill_solid(leds, NUM_LEDS, CHSV(gHue, 255, 255));
@@ -1131,7 +1131,7 @@ void strobe()
   if (autoplay == 1)adjustPattern(true);
   static bool p = false;
   static long lm = 0;
-  if (millis() - lm > (128 - (animationspeed / 2)))
+  if (millis() - lm > (128 - (speed / 2)))
   {
     if (p) fill_solid(leds, NUM_LEDS, CRGB(0, 0, 0));
     else fill_solid(leds, NUM_LEDS, solidColor);
@@ -1544,7 +1544,7 @@ void AlexaStrobeEvent(EspalexaDevice* d) {
       setBrightness(255);
       setPattern(13);
     }
-    else animationspeed = d->getValue();
+    else speed = d->getValue();
     d->setValue(speed);
   }
   static int lr;
