@@ -13,6 +13,7 @@ For beginners I would recommend watching this setup tutorial below.
 
 2. The ESP8266 boards need to be added to the Arduino IDE:
    Click on *File >> Preferences* and paste the URL  "http://arduino.esp8266.com/stable/package_esp8266com_index.json" into the **Additional Boards Manager URLs** field.
+   
    ![](software_screenshots/board_manager_urls.png?raw=true)
 
 3. Install the CH340/341 USB Driver
